@@ -1,0 +1,3 @@
+databasename ->task
+run migrate
+run db:seed

@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "6f38e219-d6ac-4f1e-a570-0d3e6cd7d0e3",
+		"name": "Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Categoires",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "lang",
+						"value": "ar",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/category",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"category"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Categoires",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/category",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Jan 2021 19:56:47 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Jan 2021 19:56:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"errNum\": \"S000\",\n    \"msg\": \"\",\n    \"data\": [\n        {\n            \"name\": \"ملابس\",\n            \"img\": \"http://127.0.0.1:8000/uploads/categoryImages/1601804684.jpg\",\n            \"has_child\": 1\n        },\n        {\n            \"name\": \"الكترونبات\",\n            \"img\": \"http://127.0.0.1:8000/uploads/categoryImages/1609687800.jpg\",\n            \"has_child\": 1\n        },\n        {\n            \"name\": \"اثاث\",\n            \"img\": \"http://127.0.0.1:8000/uploads/categoryImages/1609687357.jpg\",\n            \"has_child\": 1\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Category_Child",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cat_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/category_child",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"category_child"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Category_Child",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cat_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/category_child",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category_child"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Jan 2021 20:02:43 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Jan 2021 20:02:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"errNum\": \"S000\",\n    \"msg\": \"\",\n    \"data\": [\n        {\n            \"name\": \"ملابس رجالي\",\n            \"parent_id\": 1\n        },\n        {\n            \"name\": \"ملابس حريمي\",\n            \"parent_id\": 1\n        },\n        {\n            \"name\": \"ملابس أطفال\",\n            \"parent_id\": 1\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
